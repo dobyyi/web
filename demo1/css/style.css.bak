@@ -156,7 +156,6 @@ img{
 	margin:0 auto;
 }
 .wrap .wrap-top{
-	width:500px;
 	margin:68px auto 0;
 }
 .wrap .m-line{
