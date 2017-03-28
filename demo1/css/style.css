@@ -151,15 +151,3 @@ img{
 	margin-left:6px;
 }
 /* container */ 
-.wrap{
-	width:1200px;
-	margin:0 auto;
-}
-.wrap .wrap-top{
-	width:500px;
-	margin:68px auto 0;
-}
-.wrap .m-line{
-	width:500px;
-	border-top:1px solid #ffae26;
-}
