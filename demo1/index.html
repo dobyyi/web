@@ -8,13 +8,14 @@
   <meta name="Description" content="">
   <title>首页</title>
   <link type="text/css" href="css/style.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/javascript.js"></script>
  </head>
  <body>
 	<div class="header">
 		<a href="#"><img src="img/logo.png" /></a>
 		<form>
-			<input type="text" value="请输入关键字" />
-			<a href="javascript:;"><img src="img/search.png"/></a>
+			<input id="search" type="text" value="请输入关键字" />
+			<a id="btn1" href="javascript:;"><img src="img/search.png"/></a>
 		</form>
 		<div class="h_right">
 			<span class="r_bor"><a href="#">登录</a></span>
@@ -23,7 +24,7 @@
 	</div>
 <!-- nav -->
 	<div class="top_nav clear">
-		<ul>
+		<ul id="nav-list">
 			<li><a href="#">首页</a></li>
 			<li><a href="#">早教指南</a></li>
 			<li><a href="#">儿童动漫</a></li>
@@ -34,8 +35,8 @@
 	</div>
  <!-- lunbo -->
 	<div class="banner">
-		<img src="img/banner.png" />
-		<ul class="clear">
+		<img id="bannerimg" src="img/banner.png" />
+		<ul id="bannerul" class="clear">
 			<li></li>
 			<li></li>
 			<li></li>
@@ -44,11 +45,285 @@
 
  <!-- container -->
 	<div class="wrap">
-		<div class="wrap-top">
-			<div class="m-line">
-				<h2>早教指南</h2>
+		<div class="headline">
+			<div class="line"></div>
+			<h1>早教指南</h1>
+		</div>
+
+		<div class="container clear">
+			<a class="ad-1" href="#"><img src="img/ad-1.jpg"/></a>
+			<div class="ad-2">
+				<h4>5个艺术启蒙小游戏,培养出文艺宝宝</h4>
+				<p>妈妈不要以为抱抱小就没有艺术表现能力,其实,抱抱天生就有艺术表现能力,比如他会随着节奏感强的音乐摇晃手臂,或是自己随性涂抹出自己认为好看的图案,这些都是宝宝艺术表现能力的体现。生活中,妈妈不妨借一些亲自互动发掘宝宝的艺术潜能。</p>
+				<p>妈妈为宝宝准备一些水彩颜料和大画纸,之后给妈妈围上一个小围裙,让宝宝用画笔自由创作。可能因为宝宝太小,他的画作更多时候就是戳个点或画条线,但这种“抽象派”画作却可以提升宝宝的艺术潜力。比如他会随着节奏感前的音乐晃动手臂，或者自己随性涂抹出自己认为好看的图案,这些都是宝宝艺术表现力的体现。</p>
+			</div>
+		</div>
+
+		<div class="headline">
+			<div class="line"></div>
+			<h1>儿童动漫</h1>
+		</div>
+
+		<div class="container clear">
+			<div class="sidebar">
+				<img class="img" src="img/side-bar.png"/>
+				<div>
+					<a href="#"><img src="img/play_btn.png" /></a>
+					<p><a href="#">可乐为什么不能喝太多</a><br /><a href="#">少喝可乐对身体好</a></p>
+				</div>
+			</div>
+			<div class="wrap1 clear">
+				<div>
+					<a class="link-t" href="#"><img src="img/ad1.png"/></a>
+					<p><a href="#">为什么说挑食不好</a></p>
+				</div>
+				<div>
+					<a class="link-t" href="#"><img src="img/ad2.png"/></a>
+					<p><a href="#">为什么糖不能多吃</a></p>
+				</div>
+				<div>
+					<a class="link-t" href="#"><img src="img/ad3.png"/></a>
+					<p><a href="#">为什么新年要给压岁钱</a></p>
+				</div>
+				<div>
+					<a class="link-t" href="#"><img src="img/ad4.png"/></a>
+					<p><a href="#">为什么新年要放鞭炮</a></p>
+				</div>
+				<div>
+					<a class="link-t" href="#"><img src="img/ad4.png"/></a>
+					<p><a href="#">为什么新年要放鞭炮</a></p>
+				</div>
+			</div>
+			<div class="wrap2 clear">
+				<div>
+					<a class="link-t" href="#"><img src="img/ad5.png"/></a>
+					<p><a href="#">为什么儿童不能玩爆竹</a></p>
+				</div>
+				<div>
+					<a class="link-t" href="#"><img src="img/ad6.png"/></a>
+					<p><a href="#">为什么水果和蔬菜要洗干</a></p>
+				</div>
+				<div>
+					<a class="link-t" href="#"><img src="img/ad7.png"/></a>
+					<p><a href="#">人为什么要多吃水果和蔬菜</a></p>
+				</div>
+				<div>
+					<a class="link-t" href="#"><img src="img/ad8.png"/></a>
+					<p><a href="#">拒绝儿童骑车上街</a></p>
+				</div>
+				<div>
+					<a class="link-t" href="#"><img src="img/ad8.png"/></a>
+					<p><a href="#">拒绝儿童骑车上街</a></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="headline">
+			<div class="line"></div>
+			<h1>亲子合作</h1>
+		</div>
+
+		<div class="col-3 clear">
+			<div>
+				<a href=""><img src="img/yujia.png"/></a>
+				<p>亲子瑜伽</p>
+			</div>
+			<div>
+				<a href=""><img src="img/yujia1.png"/></a>
+				<p>亲子夏令营</p>
+			</div>
+			<div>
+				<a href=""><img src="img/yujia2.png"/></a>
+				<p>亲子拔河</p>
+			</div>
+		</div>
+
+		<div class="headline">
+			<div class="line"></div>
+			<h1>快乐手工</h1>
+		</div>
+
+		<div class="happy clear">
+			<div class="col-4">
+				<div>
+					<a class="link" href="#"><img src="img/img1.png" /></a>
+					<p class="text"><a href="#">水果小汽车</a></p>
+					<div class="text-info">
+						<p>简单的小汽车模型, 玩腻了还可以吃下肚, 绝对不浪费。 准备好苹果......</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div>
+					<a class="link" href="#"><img src="img/img2.png" /></a>
+					<p class="text"><a href="#">小螃蟹</a></p>
+					<div class="text-info">
+						<p>活灵活现的小螃蟹, 就像真的会爬动呢, 让人靠近的时候也有那么......</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div>
+					<a class="link" href="#"><img src="img/img3.png" /></a>
+					<p class="text"><a href="#">乌龟剪纸</a></p>
+					<div class="text-info">
+						<p>漂亮又可爱的小乌龟剪纸, 憨态可掬的模样一定也让小朋友觉得很喜爱吧......</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div>
+					<a class="link" href="#"><img src="img/img4.png" /></a>
+					<p class="text"><a href="#">布艺复活节彩蛋</a></p>
+					<div class="text-info">
+						<p>漂亮的复活节彩蛋制作, 用彩色的毛毡布剪成不同的形状, 再粘贴到合适的......</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="headline">
+			<div class="line"></div>
+			<h1>益智游戏</h1>
+		</div>
+		<div class="wrap-8 clear">
+			<div class="col-8">
+				<div>	
+					<a href="#"><img src="img/flash-game1.png" /></a>
+					<p>粉色小猪拼图</p>
+				</div>
+			</div>
+			<div class="col-8">
+				<div>	
+					<a href="#"><img src="img/flash-game1.png" /></a>
+					<p>粉色小猪拼图</p>
+				</div>
+			</div>
+			<div class="col-8">
+				<div>	
+					<a href="#"><img src="img/flash-game1.png" /></a>
+					<p>粉色小猪拼图</p>
+				</div>
+			</div>
+			<div class="col-8">
+				<div>	
+					<a href="#"><img src="img/flash-game1.png" /></a>
+					<p>粉色小猪拼图</p>
+				</div>
+			</div>
+			<div class="col-8">
+				<div>	
+					<a href="#"><img src="img/flash-game1.png" /></a>
+					<p>粉色小猪拼图</p>
+				</div>
+			</div>
+			<div class="col-8">
+				<div>	
+					<a href="#"><img src="img/flash-game1.png" /></a>
+					<p>粉色小猪拼图</p>
+				</div>
+			</div>
+			<div class="col-8">
+				<div>	
+					<a href="#"><img src="img/flash-game1.png" /></a>
+					<p>粉色小猪拼图</p>
+				</div>
+			</div>
+			<div class="col-8">
+				<div>	
+					<a href="#"><img src="img/flash-game1.png" /></a>
+					<p>粉色小猪拼图</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrap-8-1 clear">
+			<div class="col-8">
+				<div>	
+					<a href="#"><img src="img/flash-game1.png" /></a>
+					<p>粉色小猪拼图</p>
+				</div>
+			</div>
+			<div class="col-8">
+				<div>	
+					<a href="#"><img src="img/flash-game1.png" /></a>
+					<p>粉色小猪拼图</p>
+				</div>
+			</div>
+			<div class="col-8">
+				<div>	
+					<a href="#"><img src="img/flash-game1.png" /></a>
+					<p>粉色小猪拼图</p>
+				</div>
+			</div>
+			<div class="col-8">
+				<div>	
+					<a href="#"><img src="img/flash-game1.png" /></a>
+					<p>粉色小猪拼图</p>
+				</div>
+			</div>
+			<div class="col-8">
+				<div>	
+					<a href="#"><img src="img/flash-game1.png" /></a>
+					<p>粉色小猪拼图</p>
+				</div>
+			</div>
+			<div class="col-8">
+				<div>	
+					<a href="#"><img src="img/flash-game1.png" /></a>
+					<p>粉色小猪拼图</p>
+				</div>
+			</div>
+			<div class="col-8">
+				<div>	
+					<a href="#"><img src="img/flash-game1.png" /></a>
+					<p>粉色小猪拼图</p>
+				</div>
+			</div>
+			<div class="col-8">
+				<div>	
+					<a href="#"><img src="img/flash-game1.png" /></a>
+					<p>粉色小猪拼图</p>
+				</div>
 			</div>
 		</div>
 	</div>
+	
+	<!-- bottom -->
+
+	<div class="bottom">
+		<div class="wrap">
+			<h2>友情链接</h2>
+			<ul class="clear">
+				<li><a href="#">上海早教</a></li>
+				<li><a href="#">上海早教</a></li>
+				<li><a href="#">上海早教</a></li>
+				<li><a href="#">上海早教</a></li>
+				<li><a href="#">上海早教</a></li>
+				<li><a href="#">上海早教</a></li>
+				<li><a href="#">上海早教</a></li>
+				<li><a href="#">上海早教</a></li>
+				<li><a href="#">上海早教</a></li>
+				<li><a href="#">上海早教</a></li>
+				<li><a href="#">上海早教</a></li>
+				<li><a href="#">上海早教</a></li>
+				<li><a href="#">北京早教</a></li>
+				<li><a href="#">北京早教</a></li>
+				<li><a href="#">北京早教</a></li>
+				<li><a href="#">北京早教</a></li>
+				<li><a href="#">北京早教</a></li>
+				<li><a href="#">北京早教</a></li>
+				<li><a href="#">北京早教</a></li>
+				<li><a href="#">北京早教</a></li>
+				<li><a href="#">北京早教</a></li>
+				<li><a href="#">北京早教</a></li>
+				<li><a href="#">北京早教</a></li>
+				<li><a href="#">北京早教</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<p class="footer">Copyright ©2017幼儿学典 ICP:鲁B2-20030192鲁ICP备11011421号</p>
  </body>
 </html>
